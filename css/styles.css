@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+    background-color:mintcream;
+}
+
+/* Styles les listboxes */
+.listbox1, .listbox2, .listbox3, .listbox4 {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid #aaa;
+    overflow: auto; 
+    white-space: nowrap; 
+}
+
+.listbox1, .listbox4 {
+    max-width: 600px; 
+}
+
+.listbox2, .listbox3 {
+    max-width: 1500px; 
+}
+
+/* Style le corps des la tables. */
+.listbox1 tbody, .listbox2 tbody, .listbox3 tbody, .listbox4 tbody {
+    display: block;
+    height: 100px;
+    overflow-y: scroll;
+     overflow-x: hidden; 
+     background-color: lemonchiffon;
+}
+
+/* Style l'entête et le pied de page des la table. */
+.listbox1 thead, .listbox2 thead, .listbox3 thead, .listbox4 thead, .listbox1 tfoot, .listbox2 tfoot, .listbox3 tfoot, .listbox4 thead {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    text-align: left;
+    background-color:lightgray;
+    
+}
+
+
+ /* Style les cellules */
+ .listbox1 td, .listbox1 th, .listbox2 td, .listbox2 th, .listbox3 td, .listbox4 th {
+    padding: 8px;
+}
+
+/* Style les espacements des champs de la première et de la deuxième table*/
+.listbox1 th:nth-child(1), .listbox1 td:nth-child(1) {
+    width: 50%;
+}
+
+.listbox1 th:nth-child(2), .listbox1 td:nth-child(2) {
+    width: 20%;
+}
+
+.listbox1 th:nth-child(3), .listbox1 td:nth-child(3) {
+    width: 30%;
+}
+
+/*Espacement de deuxième et troisième table*/
+.listbox2 th:nth-child(1), .listbox2 td:nth-child(1),
+.listbox3 th:nth-child(1), .listbox3 td:nth-child(1) {
+    width: 30%;
+}
+
+.listbox2 th:nth-child(2), .listbox2 td:nth-child(2),
+.listbox3 th:nth-child(2), .listbox3 td:nth-child(2),
+.listbox2 th:nth-child(3), .listbox2 td:nth-child(3),
+.listbox3 th:nth-child(3), .listbox3 td:nth-child(3) {
+    width: 20%;
+}
+
+.listbox2 th:nth-child(4), .listbox2 td:nth-child(4),
+.listbox3 th:nth-child(4), .listbox3 td:nth-child(4),
+.listbox3 th:nth-child(5), .listbox3 td:nth-child(5) {
+    width: 15%;
+}
+
+.edit-delete {
+    white-space: nowrap;
+}
+
+.conteneur-catFour {
+    display: grid;
+    grid-template-columns:20% 80%;
+    gap: 20px;
+}
+.conteneur-deDiv {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.conteneur-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.conteneur-produit {
+    background-color: lightskyblue;
+}
